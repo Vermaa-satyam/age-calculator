@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedan+SC&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #7E57F3;
+    flex-direction: column;
+    gap: 50px;
+}
+.age-container{
+    background-color: white;
+    padding: 30px;
+    width: 500px;
+    height: 250px; 
+    box-shadow: 0 0 10px black ;
+    text-align: center;
+    border-radius: 15px;
+}
+.age-header{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px;
+    font-family: "Sedan SC", serif;
+}
+label{
+    font-size: 20px;
+    font-weight: 5s00;
+    margin-bottom: 10px;
+    display: block;
+    font-family: "Sedan SC", serif;
+}
+.age-dob-input{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+}
+.calculate-btn{
+    font-size: 1.2rem;
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    outline: 0;
+}
+.result-container{
+    display: flex;
+    gap: 20px;
+}
+.same{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    font-family: "Sedan SC", serif;
+    padding: 10px;
+}
+.ttxt{
+    font-size: 25px;
+    font-weight: 600;
+}
+.tpp{
+    font-size: 25px;
+    font-weight: 600;
+}
+ i{
+    color: red;
+ }
+ .msg{
+    text-align: center;
+    font-family: "Sedan SC", serif;
+ }
+
+/* responsiveness  section */
+
+@media only screen and (max-width:455px){
+   
+    .result-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .age-container{
+        width: fit-content;
+    }
+
+    .same{
+        padding: 20px;
+    }
+}
